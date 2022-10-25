@@ -1,0 +1,131 @@
+$color-primary: #1c32f1;
+$text-color-primary: #1c1d1c;
+$text-color-secondary: lighten($text-color-primary, 15%);
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: $text-color-secondary;
+}
+
+h2,
+h3,
+h4 {
+  color: $text-color-primary;
+  font-weight: bold;
+}
+
+.resume-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.025);
+}
+
+.resume-section-heading {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  color: $color-primary;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: $color-primary;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.resume-name {
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: $color-primary;
+}
+
+.resume-tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.resume-contact {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.75rem;
+}
+
+a.resume-link {
+  color: $text-color-secondary;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.resume-profile-image {
+  max-width: 120px;
+}
+
+.resume-intro {
+  font-size: 0.875rem;
+}
+.resume-main {
+  .item-title {
+    font-size: 1rem;
+  }
+  .item-meta {
+    font-size: 0.75rem;
+  }
+  .item-content {
+    font-size: 0.875rem;
+  }
+}
+
+.resume-aside {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  .item {
+    font-size: 0.875rem;
+  }
+  .item-title {
+    font-size: 1rem;
+  }
+}
+
+.resume-education-list,
+.resume-degree-time {
+  font-size: 0.75rem;
+}
+
+.resume-lang-list,
+.resume-interests-list {
+  font-size: 0.875rem;
+}
+
+.resume-social-list {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+  .resume-aside {
+    border-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .resume-contact {
+    border-left: 0;
+  }
+}
+footer {
+  a {
+    text-decoration: none;
+    color: $text-color-primary;
+    font-size: 2rem;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+.slide-img {
+  width: 100%;
+  height: 80vh;
+}
